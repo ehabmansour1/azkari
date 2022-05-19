@@ -29,7 +29,7 @@ let title = document.querySelector(".title");
 let endMessage = document.querySelector(".end-message");
 console.log(time);
 function titleFunc() {
-  if (time >= 0 && time < 16) {
+  if (time >= 3 && time < 15) {
     title.innerHTML = `الآن, أذكار الصباح`;
   } else {
     title.innerHTML = `الآن, أذكار المساء`;
@@ -96,3 +96,4 @@ reset.onclick = function () {
   strokeWidth = 315;
   circle.setAttribute("stroke-dashoffset", strokeWidth);
 };
+//------------------------------

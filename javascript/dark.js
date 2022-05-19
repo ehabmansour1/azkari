@@ -17,17 +17,13 @@ darkButt.onclick = function dark() {
     darkButtI.classList.add("fa-moon");
     root.style.setProperty("--border-color", "#222228");
     root.style.setProperty("--main-color", "#b8c2cc");
-    prayTime.src =
-      "http://prayertimes3.today/embed/?city=170&azan=true&time=false&intro=false&next-prayer=true&remove-link=true&width=100%&lang=ar&color=383252";
   } else {
     localStorage.setItem("isDarkMode", false);
     darkButtSpan.innerHTML = "العادي";
     darkButtI.classList.add("fa-sun-bright");
     darkButtI.classList.remove("fa-moon");
     root.style.setProperty("--border-color", "#e5e7eb");
-    root.style.setProperty("--main-color", "#4827d0");
-    prayTime.src =
-      "http://prayertimes3.today/embed/?city=170&azan=true&time=false&intro=false&next-prayer=true&remove-link=true&width=100%&lang=ar&color=4827d0";
+    root.style.setProperty("--main-color", "#2196f3");
   }
 };
 if (localStorage.getItem("isDarkMode") === "true") {
@@ -39,15 +35,11 @@ if (localStorage.getItem("isDarkMode") === "true") {
   darkButtI.classList.add("fa-moon");
   root.style.setProperty("--border-color", "#222228");
   root.style.setProperty("--main-color", "#b8c2cc");
-  prayTime.src =
-    "http://prayertimes3.today/embed/?city=170&azan=true&time=false&intro=false&next-prayer=true&remove-link=true&width=100%&lang=ar&color=383252";
 } else {
   localStorage.setItem("isDarkMode", false);
   darkButtSpan.innerHTML = "العادي";
   darkButtI.classList.add("fa-sun-bright");
   darkButtI.classList.remove("fa-moon");
   root.style.setProperty("--border-color", "#e5e7eb");
-  root.style.setProperty("--main-color", "#4827d0");
-  prayTime.src =
-    "http://prayertimes3.today/embed/?city=170&azan=true&time=false&intro=false&next-prayer=true&remove-link=true&width=100%&lang=ar&color=4827d0";
+  root.style.setProperty("--main-color", "#2196f3");
 }

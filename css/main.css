@@ -1,6 +1,6 @@
 /* start variables */
 :root {
-  --main-color: #4827d0;
+  --main-color: #2196f3;
   --border-color: #e5e7eb;
 }
 /* end variables */
@@ -28,7 +28,7 @@ body {
   color: white !important;
 }
 .dark-butt {
-  color: #a294ee;
+  color: #2196f3;
   background-color: #0d0c11 !important;
 }
 /* Small */
@@ -498,7 +498,7 @@ main .reset:hover {
 /* end main  */
 /* start prytime */
 .praytime iframe {
-  height: 391px;
+  height: 301px;
   width: 500px;
   max-width: 100%;
   border: none;
@@ -524,7 +524,7 @@ main .reset:hover {
   z-index: 30;
   width: 100%;
   height: 100vh;
-  background-color: #4827d0;
+  background-color: #2196f3;
   display: flex;
   justify-content: center;
   align-items: center;

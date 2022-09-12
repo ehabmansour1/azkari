@@ -44,7 +44,7 @@ mainButt.onclick = function () {
     counter.classList.remove("color-animation");
   }, 300);
   navigator.vibrate(13);
-  if (time >= 0 && time < 16) {
+  if (time >= 0 && time < 15) {
     zikr.innerHTML = morning[i];
     strokeWidth = strokeWidth - 315 / 52;
     if (strokeWidth > 0) {

@@ -24,11 +24,11 @@ let zikr = document.querySelector(".zikr");
 let counter = document.querySelector(".counter");
 let i = 0;
 
-// ------------------------time ------------------------------------
 let today = new Date();
 let time = today.getHours();
 let title = document.querySelector(".title");
 let endMessage = document.querySelector(".end-message");
+
 if (title) {
   console.log(time);
   function titleFunc() {
@@ -39,6 +39,7 @@ if (title) {
     }
   }
   titleFunc();
+
   let strokeWidth = 315;
   mainButt.onclick = function () {
     zikrTime.style.display = "none";
@@ -46,7 +47,11 @@ if (title) {
     setTimeout(() => {
       counter.classList.remove("color-animation");
     }, 300);
-    navigator.vibrate(13);
+
+    if (navigator.vibrate) {
+      navigator.vibrate(13);
+    }
+
     if (time >= 0 && time < 15) {
       zikr.innerHTML = morning[i];
       strokeWidth = strokeWidth - 315 / 52;
@@ -81,11 +86,13 @@ if (title) {
       }
     }
   };
+
   let exitEndMessage = document.querySelector(".end-message i");
   exitEndMessage.onclick = function () {
     endMessage.style.display = "none";
   };
 }
+
 //---------------------------- reset button ---------------------
 let reset = document.querySelector(".reset");
 if (reset) {
@@ -97,12 +104,13 @@ if (reset) {
     (فَاذْكُرُونِي أَذْكُرْكُمْ وَاشْكُرُوا لِي وَلَا تَكْفُرُونِ)
     <span>[البقرة: 152]</span>`;
     counter.innerHTML = i;
-    navigator.vibrate(45);
+    if (navigator.vibrate) {
+      navigator.vibrate(45);
+    }
     strokeWidth = 315;
     circle.setAttribute("stroke-dashoffset", strokeWidth);
   };
 }
-//------------------------------
 //----------------------pryerTimes----------------------------------
 function convertTime24To12(time) {
   let [hours, minutes] = time.split(":").map((x) => parseInt(x, 10));

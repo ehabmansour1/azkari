@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Azkari - اذكاري</title>
+    <meta name="description" content="Azkari" />
+    <meta name="description" content="أذكاري" />
+    <link rel="icon" type="image/x-icon" href="images/book-solid.ico" />
+  </head>
+  <body>
+    <!-- start loader -->
+    <div class="loader">
+      <div class="lds-ripple">
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+    <!-- end loader -->
+    <!-- start header  -->
+    <header>
+      <div class="container">
+        <a href="index.html" class="logo">
+          <i class="fa-solid fa-book"></i>
+          <span>أذكاري</span>
+        </a>
+        <div class="nav">
+          <div id="menu" class="menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <ul class="links">
+            <li><a href="index.html">أذكار حسب الساعة</a></li>
+            <li><a href="pray.html">أذكار بعد الصلاة</a></li>
+            <li><a href="praytime.html">اوقات الصلاة</a></li>
+            <li><a href="quran.html">قرآن الكريم</a></li>
+            <li><a href="radio.html">إذاعة القرآن الكريم</a></li>
+            <li><a href="about.html">حول</a></li>
+          </ul>
+          <button class="dark">
+            <i class="fa-solid fa-sun-bright"></i>
+            <span>العادي</span>
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- end header  -->
+    <!-- start main section  -->
+    <main>
+      <div class="container">
+        <h1 class="title"></h1>
+        <div class="zikr">
+          <p>قال الله تعالى:</p>
+          (فَاذْكُرُونِي أَذْكُرْكُمْ وَاشْكُرُوا لِي وَلَا تَكْفُرُونِ)
+          <span>[البقرة: 152]</span>
+        </div>
+        <div class="time-of-zikr">
+          عرض الاذكار يتغير حسب الوقت ,وقت الصباح يبدأ من منتصف الليل إلى
+          الزوال، وأفضل وقت لأذكار الصباح هو بعد صلاة الصبح حتّى طلوع الشمس. ,
+          وقت المساء يبدأ من زوال الشمس حتّى نهاية النصف الأول من الليل، وأفضل
+          وقت لأذكار المساء هو: مِن بعد صلاة العصر حتّى غروب الشمس.
+        </div>
+        <div class="main-button color-animation-infinite">
+          <i class="fa-solid fa-fingerprint"></i>
+          <svg width="100" height="100" viewBox="0 0 100 100">
+            <linearGradient id="linear" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stop-color="#2ed8a7" />
+              <stop offset="100%" stop-color="#a6ceff" />
+            </linearGradient>
+            <circle
+              stroke-linecap="round"
+              cx="50"
+              cy="50"
+              r="48"
+              stroke="url(#linear)"
+              stroke-width="4"
+              fill="none"
+              stroke-dasharray="315"
+              stroke-dashoffset="315"
+              stroke-mitterlimit="0"
+              transform="rotate(-90 ) translate(-100 0)"
+            />
+          </svg>
+        </div>
+        <span class="counter">0</span>
+        <span class="reset">إعادة</span>
+      </div>
+      <div class="end-message">
+        <i class="fa-solid fa-xmark"></i>
+        <span>تم بحمد الله ❤</span>
+      </div>
+    </main>
+    <!-- end main section  -->
+    <script src="javascript/azkar.js"></script>
+    <script src="javascript/main.js"></script>
+    <script src="javascript/dark.js"></script>
+  </body>
+</html>

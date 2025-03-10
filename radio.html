@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Azkari-اذكاري</title>
+    <meta name="description" content="Azkari" />
+    <meta name="description" content="أذكاري" />
+    <link rel="icon" type="image/x-icon" href="images/book-solid.ico" />
+  </head>
+  <body>
+    <!-- start loader -->
+    <div class="loader">
+      <div class="lds-ripple">
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+    <!-- end loader -->
+    <!-- start header  -->
+    <header>
+      <div class="container">
+        <a href="index.html" class="logo">
+          <i class="fa-solid fa-book"></i>
+          <span>أذكاري</span>
+        </a>
+        <div class="nav">
+          <div id="menu" class="menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <ul class="links">
+            <li><a href="index.html">أذكار حسب الساعة</a></li>
+            <li><a href="pray.html">أذكار بعد الصلاة</a></li>
+            <li><a href="praytime.html">اوقات الصلاة</a></li>
+            <li><a href="quran.html">قرآن الكريم</a></li>
+            <li><a href="radio.html">إذاعة القرآن الكريم</a></li>
+            <li><a href="about.html">حول</a></li>
+          </ul>
+          <button class="dark">
+            <i class="fa-solid fa-sun-bright"></i>
+            <span>العادي</span>
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- end header  -->
+    <div class="radio">
+      <div class="container">
+        <h1>إذاعة القرآن الكريم</h1>
+        <div class="live">بث مباشر</div>
+        <select class="radiochannel">
+          <option value="egypt">إذاعة القاهرة</option>
+          <option value="saudi">إذاعة المملكة العربية السعودية</option>
+        </select>
+        <div class="buttons">
+          <button class="play">تشغيل <i class="fa-solid fa-play"></i></button>
+          <button class="pause">ايقاف <i class="fa-solid fa-pause"></i></button>
+        </div>
+        <audio src="" autoplay></audio>
+      </div>
+    </div>
+    <script src="javascript/radio.js"></script>
+    <script src="javascript/azkar.js"></script>
+    <script src="javascript/main.js"></script>
+    <script src="javascript/dark.js"></script>
+  </body>
+</html>

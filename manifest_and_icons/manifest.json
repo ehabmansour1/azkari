@@ -1,0 +1,23 @@
+{
+  "name": "Azkari",
+  "theme_color": "#2196f3",
+  "background_color": "#ffffff",
+  "short_name": "Azkari",
+  "id": "Azkari",
+  "description": "Azkari web app",
+  "icons": [
+    {
+      "purpose": "maskable",
+      "sizes": "512x512",
+      "src": "book-solid.ico",
+      "type": "image/ico"
+    },
+    {
+      "purpose": "any",
+      "sizes": "512x512",
+      "src": "book-solid.ico",
+      "type": "image/ico"
+    }
+  ],
+  "start_url": "/index.html"
+}
